@@ -1,9 +1,9 @@
 ---
 # This is an example configuration file when use ubuntu image.
-horizon_url: "https://salesdemo-sjc.openstack.blueboxgrid.com"
+horizon_url: "https://vellanki.openstack.com"
 
 auth: {
-  auth_url: "https://salesdemo-sjc.openstack.blueboxgrid.com:5000/v2.0",
+  auth_url: "https://vellanki.openstack.com:5000/v2.0",
   username: "bvellanki",
   password: "{{ password | default(lookup('env', 'password')) }}",
   project_name: "Interop"
@@ -14,10 +14,10 @@ cluster: {
   target_os: "ubuntu",
   image_name: "Ubuntu 16.04",
   region_name: "",
-  ssh_user: "ubuntu",
+  ssh_user: "admblock",
   availability_zone: "compute_enterprise",
   validate_certs: True,
-  private_net_name: "demonet",
+  private_net_name: "bcsnet",
   flavor_name: "m1.medium",
   public_key_file: "/home/ubuntu/.ssh/fd.pub",
   private_key_file: "/home/ubuntu/.ssh/fd",

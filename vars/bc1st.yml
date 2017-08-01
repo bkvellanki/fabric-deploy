@@ -23,25 +23,18 @@ fabric: {
   # or end a name. Character dot (.) can only be used in names of peers and orderers.
   network: {
     fabric001: {
-      cas: [],
-      peers: ["anchor@peer1st.orga", "anchor@peer1st.orgb"],
-      orderers: ["orderer1st.orgc", "orderer1st.orgd"],
+      cas: ["ca.orga", "ca.orgb"],
+      peers: ["leader@1stpeer.orga", "leader@1stpeer.orgb"],
+      orderers: ["1storderer.orgc", "1storderer.orgd"],
       zookeepers: ["zookeeper1st"],
       kafkas: ["kafka1st"]
     },
     fabric002: {
-      cas: [],
-      peers: ["worker@peer2nd.orga", "worker@peer2nd.orgb"],
-      orderers: ["orderer2nd.orgc", "orderer2nd.orgd"],
+      cas: ["ca.orgc", "ca.orgd"],
+      peers: ["anchor@2ndpeer.orga", "anchor@2ndpeer.orgb"],
+      orderers: ["2ndorderer.orgc", "2ndorderer.orgd"],
       zookeepers: ["zookeeper2nd"],
-      kafkas: ["kafka2nd"]    
-    },
-    fabric003: {
-      cas: [],
-      peers: ["worker@peer3rd.orga", "worker@peer3rd.orgb"],
-      orderers: [],
-      zookeepers: ["zookeeper3rd"],
-      kafkas: ["kafka3rd"]    
+      kafkas: ["kafka2nd"]
     }
   },
 
