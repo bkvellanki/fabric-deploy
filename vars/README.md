@@ -205,7 +205,7 @@ is the file, each field gets explained after the file::
 
     auth: {
       auth_url: "https://salesdemo-sjc.openstack.blueboxgrid.com:5000/v2.0",
-      username: "litong01",
+      username: "bkvellanki",
       password: "{{ password }}",
       project_name: "Interop"
     }
