@@ -31,6 +31,13 @@ the environment, the command may not be exact the same but the steps you
 need to do should be identical.
 
     sudo apt-get update
+    
+    sudo apt-get install docker.io or sudo apt-get install docker-ce
+    On production systems, you should install a specific version of Docker CE instead of always using the latest. This output
+    is truncated. List the available versions.
+    apt-cache madison docker-ce
+    docker-ce | 17.06.0~ce-0~ubuntu | https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages
+    
     sudo apt-get install python-dev python-pip libssl-dev libffi-dev -y
     sudo pip install --upgrade pip
     sudo pip install six==1.10.0
